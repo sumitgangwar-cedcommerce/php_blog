@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fascinate&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Baloo+2&family=Fascinate&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Baloo+2&family=Fascinate&family=Open+Sans:wght@300&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Archivo:wght@100&family=Baloo+2&family=Fascinate&family=Open+Sans:wght@300&family=Staatliches&display=swap');
+:root{
+    --main-bg-color:brown;
+    --font1: 'Fascinate', cursive;
+    --font2: 'Baloo 2', cursive;
+    --font3: 'Fascinate', cursive;
+    --font4:'Staatliches', cursive;
+    --font5:'Anek Latin', sans-serif;
+    --font6: 'Open Sans', sans-serif;
+    --font7:'Open Sans', sans-serif;
+}
+.max-width-1 {
+    width: 80vw;
+}
+.max-width-full {
+    width: 100%;
+}
+
+.max-width-2 {
+    width: 60vw;
+}
+.m-auto{
+    margin:auto;
+}
+.public-checkbox {
+    background-color: steelblue;
+    color: white;
+    border:none;
+    outline: none;
+    font-size: 1.5vw;
+    font-weight: 900;
+    padding:0.9vw;
+    display: inline-block;
+    cursor: pointer;
+    border-radius:2px;
+    text-align: center;
+    width:5%;
+  
+  
+  }
+  #blogtype {
+    padding-left:7px;
+    color: transparent;
+    text-shadow: 0 0 0 #2196f3;
+
+  }
