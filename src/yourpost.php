@@ -28,7 +28,7 @@ session_start();
         $query1="SELECT name,image FROM Users where user_id='$id'";
            $result1=mysqli_query($conn,$query1);
            $row1=mysqli_fetch_assoc($result1); ?>
-           <div >
+           <div style="min-height:70vh" >
     <?php    echo ' <p id="name_of_blogger_post" >'.$row1['name'].'</p>';
          foreach($result as $row){
            
