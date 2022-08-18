@@ -3,6 +3,7 @@ session_start();
 $_SESSION['edit']="";
 $_SESSION['err'] = '';
 $_SESSION['err1'] = '';
+$_SESSION['err3'] = "";
 
 if(isset($_POST['submit_register']))
   { 
@@ -20,11 +21,21 @@ if(isset($_POST['submit_register']))
    $tag_line=$_POST['tagline'];
    $password = $_POST['password'];
    $name=$_POST['user'];
+   $confirm_password=$_POST['confirm_password'];
 
-   $role = 'user';
-   $query="INSERT INTO `Users`(`name`, `email`, `contact`, `tagline`, `password`, `date_of_joining`, `image`,`role`) VALUES ('$user_name','$user_email','$user_contact','$tag_line','$password',NOW(),'$image','$role')";
-   $result=mysqli_query($conn,$query);
-   header("Location:login.php");
+   if($confirm_password!=$password){
+      header('location:register.php');
+      $_SESSION['err3'] = "*Password and confirm_password not match";
+   }
+   else{
+      $_SESSION['err3'] = "";
+      $role = 'user';
+      $query="INSERT INTO `Users`(`name`, `email`, `contact`, `tagline`, `password`, `date_of_joining`, `image`,`role`) VALUES ('$user_name','$user_email','$user_contact','$tag_line','$password',NOW(),'$image','$role')";
+      $result=mysqli_query($conn,$query);
+      header("Location:login.php");
+   } 
+
+   
 }
 
 
